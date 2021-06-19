@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+   background-color: #88ceda;
+   color: white;
+}
+
+.header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #BA008C;
+}
+
+.button1:hover {
+    background-color: #BA008C;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00BAA1;
+}
+
+.button3:hover {
+    background-color: #00BAA1;
+    color: white;
+}
+
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 10px 10px 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    margin: 20px 20px 20px 20px;
+}
+
+#heuristicAdmissible, #heuristicNonAdmissible {
+    visibility: hidden;
+    position: relative;
+}
+
+#title {
+    background-color: #88ceda;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+#title-tree {
+    font-size: 20px;
+    font-weight:bold;
+    padding: 20px 20px 20px 20px;
+}
+
+#title-heuristicAdmissible, #title-heuristicNonAdmissible {
+    font-size: 20px;
+    font-weight:bold;
+    padding: 20px 20px 20px 20px;
+}
+
+#heuristicAdmissibleTree, #heuristicNonAdmissibleTree {
+    visibility: hidden;
+}
+
+#heuristicAdmissibleTreeTable td, #heuristicNonAdmissibleTreeTable td{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid #008CBA;
+    text-align: center;
+}

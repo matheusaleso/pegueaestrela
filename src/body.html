@@ -1,0 +1,75 @@
+<!--HOME-->
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+		<meta charset="utf-8"/>
+		<title>Pegue A estrela </title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        
+        <script src="node.js"></script>
+        <script src="path.js"></script>
+        <script src="board.js"></script>
+        <script src="simulator.js"></script>
+    </head>
+    <body onload="startGrid()">
+        <div class="title">
+            <header class="header"> 
+                <h2>PEGUE A *</h2>
+            </header>
+        </div>
+        <div class="buttons">
+            <button class="button button1" onclick="admissibleHeuristic()">Heurística Admissível</button>
+            <button class="button button2" onclick="notAdmissibleHeuristic()">Heurística Não Admissível</button>
+        </div>
+
+
+        <div id= "message"></div>
+        <div class="canvas">
+            <canvas id="canvas" width="960px" height="480px">
+            </canvas>
+        </div>
+
+        <div id="heuristicAdmissible">
+            <p id="title">Heurística Admissível</p>
+            <p id="title-heuristicAdmissible"></p>
+            <section>
+                <table id="tableAOpen" border = "1">
+                    <tr>
+                        <td><b>OPEN</b></td>
+                    </tr>
+                </table>
+                <table id="tableAClosed" border = "1">
+                    <tr>
+                        <td><b>CLOSED</b></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div id="heuristicAdmissibleTree">
+            <p id="title-tree">Árvore</p>
+            <table id="heuristicAdmissibleTreeTable"></table>
+        </div>
+
+
+        <div id="heuristicNonAdmissible">
+            <p id="title">Heurística Não-Admissível</p>
+            <p id="title-heuristicNonAdmissible"></p>
+            <section>
+                <table id="tableNOpen" border = "1" cellspadding="2">
+                    <tr>
+                        <td><b>OPEN</b></td>
+                    </tr>
+                </table>
+                <table id="tableNClosed" border = "1" cellspadding="2">
+                    <tr>
+                        <td><b>CLOSED</b></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div id="heuristicNonAdmissibleTree">
+            <p id="title-tree">Árvore</p>
+            <table id="heuristicNonAdmissibleTreeTable"></table>
+        </div>
+    </body>
+</html>
